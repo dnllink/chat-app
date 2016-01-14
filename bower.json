@@ -1,0 +1,24 @@
+{
+  "name": "chat-app",
+  "description": "App de chat",
+  "main": "index.js",
+  "authors": [
+    "dnllink"
+  ],
+  "license": "ISC",
+  "moduleType": [
+    "node"
+  ],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.8"
+  }
+}
