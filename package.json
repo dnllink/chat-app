@@ -9,6 +9,7 @@
   "author": "dnllink",
   "license": "ISC",
   "dependencies": {
+    "angular-cookies": "^1.4.8",
     "body-parser": "^1.14.2",
     "express": "^4.13.3",
     "express-load": "^1.1.15",

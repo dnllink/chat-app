@@ -1,6 +1,7 @@
 var express = require('express');
 var load = require('express-load');
 var bodyParser = require('body-parser');
+var path = require('path');
 
 module.exports = function () {
 
@@ -20,6 +21,11 @@ module.exports = function () {
     load('models', {
         cwd: 'app'
     }).then('controllers').then('routes').into(app);
+
+    // habilitando HTML5MODE
+    app.all('/*', function (req, res) {
+        res.sendFile(path.resolve('public/principal.html'));
+    });
 
     return app;
 }
