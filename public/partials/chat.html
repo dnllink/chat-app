@@ -1,22 +1,26 @@
-<h1>CHAT</h1>
-<div>
-    <table>
-        <tr>
-            <th>Usuario</th>
-            <th>Data</th>
-            <th>Mensagem</th>
-        </tr>
-        <tr ng-repeat="message in messages">
-            <td>{{message.usuario}}</td>
-            <td>{{message.dataHora}}</td>
-            <td>{{message.mensagem}}</td>
-        </tr>
-    </table>
-</div>
-<div>
-    <p>
-        <label>Mensagem:</label>
-        <input type="text" ng-model="message.mensagem" />
-        <input type="button" value="Enviar" ng-click="sendMessage()" />
-    </p>
+<div class="row">
+    <div class="col-sm-4"></div>
+    <div class="col-sm-4">
+        <h1 class="text-center">CHAT</h1>
+        <table>
+            <tr>
+                <th>Usuario</th>
+                <th>Data</th>
+                <th>Mensagem</th>
+            </tr>
+            <tr ng-repeat="message in messages">
+                <td>{{message.usuario}}</td>
+                <td>{{message.dataHora}}</td>
+                <td>{{message.mensagem}}</td>
+            </tr>
+        </table>
+        <div>
+            <p>
+                <label>Mensagem:</label>
+                <input type="text" ng-model="message.mensagem" />
+                <input type="button" value="Enviar" ng-click="sendMessage()" />
+            </p>
+        </div>
+    </div>
+    <div class="col-sm-4"></div>
 </div>
