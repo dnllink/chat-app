@@ -2,24 +2,18 @@
     <div class="col-sm-4"></div>
     <div class="col-sm-4">
         <h1 class="text-center">CHAT</h1>
-        <table>
-            <tr>
-                <th>Usuario</th>
-                <th>Data</th>
-                <th>Mensagem</th>
-            </tr>
-            <tr ng-repeat="message in messages">
-                <td>{{message.usuario}}</td>
-                <td>{{message.dataHora}}</td>
-                <td>{{message.mensagem}}</td>
-            </tr>
-        </table>
+        <ul class="list-unstyled well">
+            <li ng-repeat="message in messages" class="message-line">
+                <kbd>{{message.usuario}}</kbd> - <span>{{message.dataHora}}</span>: <span>{{message.mensagem}}</span>
+            </li>
+        </ul>
         <div>
-            <p>
-                <label>Mensagem:</label>
-                <input type="text" ng-model="message.mensagem" />
-                <input type="button" value="Enviar" ng-click="sendMessage()" />
-            </p>
+            <form>
+                <div class="bg-info">
+                    <input class="message-input bg-info" type="text" ng-model="message.mensagem" />
+                    <button class="message-button btn btn-success glyphicon glyphicon-envelope" ng-click="sendMessage()"></button>
+                </div>
+            </form>
         </div>
     </div>
     <div class="col-sm-4"></div>

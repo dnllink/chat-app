@@ -1,0 +1,13 @@
+.message-line {
+    width: 100%;
+}
+
+.message-input {
+    width: 75%;
+    border: 0;
+    padding-left: 2%;
+}
+
+.message-button {
+    width: 20%;
+}

@@ -1,8 +1,4 @@
-var messages = [{
-    usuario: 'User',
-    dataHora: '12:00',
-    mensagem: 'Mensagem teste!'
-}];
+var messages = [];
 
 module.exports = function (app) {
 
